@@ -134,6 +134,7 @@ def gui_context_help(gui: imgui.GUI):
         if gui.button('Main Help'):
             refresh_context_mapping(show_enabled_contexts_only)
             selected_context = None
+            selected_context_page = 1
 
     if gui.button('refresh'):
         refresh_context_mapping()
